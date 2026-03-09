@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +9,7 @@
 <body>
   <main class="container">
     <section class="card">
+      <div class="eyebrow">Pressure + Clarity Check</div>
       <h1>Command Center</h1>
       <p class="subtitle">Assess your pressure, regain clarity, and choose the next right move.</p>
 
@@ -37,12 +37,20 @@
         <button id="assessBtn" type="button">Assess</button>
         <button id="resetBtn" type="button">Reset</button>
       </div>
+
+      <p id="errorText" class="error-text"></p>
     </section>
 
-    <section id="resultCard" class="card result-card" style="display: none;">
-      <h2>Your Current State</h2>
-      <h3 id="stateText"></h3>
+    <section id="resultCard" class="card result-card hidden">
+      <div id="stateBadge" class="state-badge">State</div>
+      <h2 id="stateText">Your Current State</h2>
       <p id="actionText"></p>
+
+      <div class="next-step-box">
+        <h3>Next step</h3>
+        <p id="nextStepText"></p>
+      </div>
+
       <p id="summaryText" class="summary"></p>
     </section>
   </main>
