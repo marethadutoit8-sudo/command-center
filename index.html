@@ -1,1 +1,52 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Command Center</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <h1>Command Center</h1>
+      <p class="subtitle">Assess your pressure, regain clarity, and choose the next right move.</p>
+
+      <div class="form-group">
+        <label for="pressure">Pressure (1–10)</label>
+        <input id="pressure" type="number" min="1" max="10" placeholder="Enter pressure level">
+      </div>
+
+      <div class="form-group">
+        <label for="clarity">Clarity (1–10)</label>
+        <input id="clarity" type="number" min="1" max="10" placeholder="Enter clarity level">
+      </div>
+
+      <div class="form-group">
+        <label for="energy">Energy (1–10)</label>
+        <input id="energy" type="number" min="1" max="10" placeholder="Enter energy level">
+      </div>
+
+      <div class="form-group">
+        <label for="priority">Main Priority</label>
+        <input id="priority" type="text" placeholder="What matters most right now?">
+      </div>
+
+      <div class="button-row">
+        <button id="assessBtn" type="button">Assess</button>
+        <button id="resetBtn" type="button">Reset</button>
+      </div>
+    </section>
+
+    <section id="resultCard" class="card result-card" style="display: none;">
+      <h2>Your Current State</h2>
+      <h3 id="stateText"></h3>
+      <p id="actionText"></p>
+      <p id="summaryText" class="summary"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
